@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ναυμαχία</title>
+  </head>
+  <body>
+         <p>Γεια σου {{g.user[1]}}</p>
+         <p>Το χρώμα σου είναι το {{g.color}}</p>
+         <p>Δώστε θέση στη συστοιχία LED:</p>
+         <form method="POST">
+          <p>
+            <input type="text" name="column" size="5" placeholder="Οριζόντια" />
+            X
+            <input type="text" name="row" size="5" placeholder="Κάθετα" />
+          </p>
+            <button type="submit">ΑΠΟΣΤΟΛΗ στο Sense-HAT</button>
+         </form>
+         <h3>Στατιστικά:</h3>
+         <p>Έως τώρα έχουν χρωματιστεί:</p>
+         <p>{{g.red}} ΚΟΚΚΙΝΑ και</p>
+         <p>{{g.blue}} ΜΠΛΕ LED.</p>
+         <p>Απομένουν {{g.green}} πλοία (με πράσινο χρώμα).</p>
+         <p>Το ΜΠΛΕ έχει πετύχει {{g.bluehit}} πλοία.</p>
+         <p>Το ΚΟΚΚΙΝΟ έχει πετύχει {{g.redhit}} πλοία.</p>
+         <h3>{{g.message}}</h3>
+         <p><a href="/bonus_ships">Ανανέωση</a></p>
+         <p><a href="/">Αρχική σελίδα</a></p>
+  </body>
+</html>
